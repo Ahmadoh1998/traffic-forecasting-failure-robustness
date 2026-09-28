@@ -216,3 +216,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Research data and generated analysis artifacts
+# ============================================================
+# Raw DataVic/SCATS archives are downloaded separately.
+data/raw/
+*.zip
+
+# Large intermediate/modeling datasets.
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# Notebook-generated outputs are reproducible and are not tracked in Git.
+outputs/*
+!outputs/README.md
