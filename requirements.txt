@@ -1,0 +1,11 @@
+# Core Python dependencies used across NB1–NB6.
+# Exact pinned versions should be exported from the final Colab runtime
+# used for the archived reproducibility release.
+numpy
+pandas
+pyarrow
+matplotlib
+scipy
+scikit-learn
+lightgbm
+xgboost
