@@ -12,7 +12,6 @@ The study evaluates 15-minute short-term traffic-volume forecasting under both c
 traffic-forecasting-failure-robustness/
 ├── README.md
 ├── requirements.txt
-├── CITATION.cff
 ├── LICENSE
 ├── notebooks/
 │   ├── NB1_Data_Inspection_and_Quality_Audit.ipynb
@@ -24,11 +23,10 @@ traffic-forecasting-failure-robustness/
 ├── data/
 │   └── README.md
 └── outputs/
-    ├── figures/
-    └── tables/
+    └── README.md
 ```
 
-The repository is being prepared so that the complete workflow can be followed in the order **NB1 → NB6**.
+The complete analysis workflow is organized in the order **NB1 → NB6**.
 
 ## Notebook Workflow
 
@@ -105,15 +103,15 @@ Author-specific absolute Google Drive paths should not be used in the released n
 from pathlib import Path
 
 PROJECT_ROOT = Path("/content/traffic-forecasting-failure-robustness")
-DATA_DIR = PROJECT_ROOT / "data"
-OUTPUT_DIR = PROJECT_ROOT / "outputs"
+RAW_DATA_ROOT = PROJECT_ROOT / "data" / "raw"
+OUTPUT_ROOT = PROJECT_ROOT / "outputs"
 ```
 
 Users working in Google Drive can change only `PROJECT_ROOT` while keeping the internal folder structure unchanged.
 
 ## Python Environment
 
-The final software environment will be documented in `requirements.txt` with pinned package versions.
+The repository includes `requirements.txt` listing the core Python dependencies used by NB1–NB6. Exact package versions should be exported from the final Colab runtime and pinned before the archival release is frozen.
 
 The workflow uses common scientific Python libraries together with packages required for:
 
@@ -133,13 +131,13 @@ pip install -r requirements.txt
 
 ## Reproducibility Notes
 
-Before the repository is released publicly, the notebooks will be checked to ensure that:
+The public notebook copies have been cleaned so that:
 
 - all required input files are documented;
 - author-specific local paths are removed;
 - no credentials, tokens, or private links are present;
 - random seeds are documented where applicable;
-- package versions are recorded;
+- core software dependencies are documented, with exact versions to be pinned for the archival release;
 - outputs use clear and reproducible filenames; and
 - the notebook sequence and dependencies are explicit.
 
@@ -149,7 +147,7 @@ The analysis code associated with the manuscript is maintained in this repositor
 
 https://github.com/Ahmadoh1998/traffic-forecasting-failure-robustness
 
-The repository will contain the six analysis notebooks, execution instructions, software-environment information, and links to the required data resources.
+The repository contains the six cleaned analysis notebooks, execution instructions, software-environment information, and links to the required data resources.
 
 ## Data Availability
 
