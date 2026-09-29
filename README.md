@@ -64,9 +64,9 @@ The original source data are not duplicated in this repository. Users should obt
 
 ## Reproducibility Data
 
-Processed files required to reproduce the reported experiments will be documented in `data/README.md`.
+The raw source data are publicly available from DataVic and are not redistributed in this repository.
 
-Large reproducibility files that are unsuitable for normal Git tracking will be distributed separately through a versioned repository release or another archival location. The permanent link will be added here once the reproducibility package is finalized.
+The processed datasets generated and used in the analysis are not stored in the Git repository because several files are large. They are available from the corresponding author upon reasonable request. The file roles and notebook dependencies are documented in `data/README.md`.
 
 ## Recommended Execution Order
 
@@ -155,7 +155,7 @@ The raw traffic-volume data are publicly available from the Victoria Department 
 
 https://discover.data.vic.gov.au/dataset/traffic-signal-volume-data
 
-Processed reproducibility files required for the manuscript experiments will be linked here after the reproducibility package is finalized.
+The processed datasets generated and used in the analysis are available from the corresponding author upon reasonable request.
 
 ## Citation
 
