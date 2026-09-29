@@ -1,6 +1,6 @@
 # Data
 
-This repository does not redistribute the raw Victoria SCATS traffic-signal volume data.
+This repository does not redistribute the raw Victoria SCATS traffic-signal volume data or the large processed datasets generated during the study.
 
 ## Raw data
 
@@ -16,13 +16,15 @@ Place the downloaded monthly ZIP archives in:
 data/raw/
 ```
 
-The public notebooks expect the raw source archives to be available in this directory when running the full workflow from NB1.
+The notebooks expect the raw source archives to be available in this directory when running the complete workflow from NB1.
 
 ## Processed data
 
 Processed datasets and model-ready files are generated sequentially by the notebooks and written under `outputs/`.
 
-Because several processed Parquet files are large, they are not tracked in the normal Git history. A versioned reproducibility package can be distributed separately through a GitHub Release after the final manuscript package is frozen.
+Because several processed Parquet files are large, they are not stored in the Git repository. The processed datasets used in the manuscript analysis are **available from the corresponding author upon reasonable request**.
+
+For internal review and reproducibility checking, the corresponding author can provide a processed-data package containing the model-ready dataset, detector mapping, failure-run library, monthly clean 15-minute files, and split/manifest files required to reproduce the main experiments.
 
 ## Notebook dependencies
 
