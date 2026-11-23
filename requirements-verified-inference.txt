@@ -1,0 +1,12 @@
+# Verified inference environment (Google Colab)
+# These versions reproduced archived August predictions on a 100,000-row sample
+# per model. They are NOT asserted to be the original training versions.
+# Python 3.13.16
+numpy==2.4.6
+pandas==2.2.3
+pyarrow==23.0.1
+matplotlib==3.10.0
+scipy==1.16.3
+scikit-learn==1.6.1
+lightgbm==4.6.0
+xgboost==3.4.1
