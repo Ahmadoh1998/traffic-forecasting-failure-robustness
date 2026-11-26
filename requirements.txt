@@ -1,11 +1,13 @@
-# Core Python dependencies used across NB1–NB6.
-# Exact pinned versions should be exported from the final Colab runtime
-# used for the archived reproducibility release.
-numpy
-pandas
-pyarrow
-matplotlib
-scipy
-scikit-learn
-lightgbm
-xgboost
+# Pinned package versions from the Google Colab runtime used for the
+# archived August saved-model inference verification.
+# Python runtime observed: 3.13.16
+# These pins document the verified inference environment; they are not
+# independently confirmed as the original model-training environment.
+numpy==2.4.6
+pandas==2.2.3
+pyarrow==23.0.1
+matplotlib==3.10.0
+scipy==1.16.3
+scikit-learn==1.6.1
+lightgbm==4.6.0
+xgboost==3.4.1
